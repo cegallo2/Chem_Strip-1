@@ -23,6 +23,7 @@ using namespace std;
 #include "mdcrd.h"
 #include "pdb.h"
 
+
 /**
  * Author:            Caleb Gallops and Dennis Kennetz
  *
@@ -41,8 +42,8 @@ bool read_mdcrd ( string mdcrdfilename, int time_steps,
         vector<Coordinates> & per_box_bound, ofstream& log_file ) {
 
     cout << "Reading MDCRD file ..." << endl;
-    int size;
 
+    int size;
     ifstream parmfile( mdcrdfilename );
 
     if (!(parmfile.is_open())) {

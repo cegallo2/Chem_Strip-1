@@ -1,3 +1,4 @@
+CXX = mpicxx
 program_NAME := MD_strip
 CXXFLAGS += -Wall -std=c++0x
 io_OBJS := $(wildcard src/*.cpp)

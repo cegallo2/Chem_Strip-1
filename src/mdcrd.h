@@ -32,7 +32,6 @@ struct Trajectory{
     vector<Coordinates> per_box_bound;//dimensions of the periodic box
     vector<Coordinates> rdf_solute_coord;//coordinates of the solute atoms
     vector<Coordinates> rdf_solvent_coord;//coordinates of the solvent atoms
-
 };
 
 bool read_mdcrd (string mdcrdfilename,int time_steps, int number_of_atoms,
